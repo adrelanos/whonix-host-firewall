@@ -70,6 +70,20 @@ done
 
 echo "OK: Loading Whonix firewall..."
 
+###########################
+## interfaces
+###########################
+
+## External interface
+[ -n "$EXT_IF" ] || EXT_IF="eth0"
+
+###########################
+## NON_TOR_GATEWAY
+###########################
+
+## 10.0.2.2/24: VirtualBox DHCP
+[ -n "$NON_TOR_GATEWAY" ] || NON_TOR_GATEWAY="192.168.1.0/24 192.168.0.0/24 127.0.0.0/8 10.152.152.0/24 10.0.2.2/24"
+
 ################
 ## VPN related #
 ################
@@ -223,6 +237,15 @@ fi
 
 ## Existing connections are accepted.
 iptables -A OUTPUT -m state --state ESTABLISHED -j ACCEPT
+
+## Accept outgoing connections to local network, Whonix-Workstation and VirtualBox,
+## unless VPN_FIREWALL mode is enabled.
+## ENABLED BY DEFAULT.
+if [ ! "$VPN_FIREWALL" = "1" ]; then
+   for NET in $NON_TOR_GATEWAY; do
+      iptables -A OUTPUT -d "$NET" -j ACCEPT
+   done
+fi
 
 ## Connections to VPN servers are allowed,
 ## when VPN_FIREWALL mode is enabled.
