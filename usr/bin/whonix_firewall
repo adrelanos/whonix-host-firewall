@@ -90,6 +90,8 @@ echo "OK: Loading Whonix firewall..."
 
 ## Set secure defaults.
 iptables -P INPUT DROP
+
+## FORWARD rules does not actually do anything if forwarding is disabled. Better be safe just in case.
 iptables -P FORWARD DROP
 
 ## Not yet filtering outgoing traffic.
@@ -210,13 +212,38 @@ fi
 ## IPv4 OUTPUT
 ###########################
 
-## No output filtering yet.
+## No output filtering yet!
 
 ## Allow outgoing traffic on VPN interface,
 ## if VPN_FIREWALL mode is enabled.
 ## DISABLED BY DEFAULT.
 if [ "$VPN_FIREWALL" = "1" ]; then
    iptables -A OUTPUT -o "$VPN_INTERFACE" -j ACCEPT
+fi
+
+## Existing connections are accepted.
+iptables -A OUTPUT -m state --state ESTABLISHED -j ACCEPT
+
+## Connections to VPN servers are allowed,
+## when VPN_FIREWALL mode is enabled.
+## DISABLED BY DEFAULT.
+if [ "$VPN_FIREWALL" = "1" ]; then
+   for SERVER in $VPN_SERVERS; do
+      iptables -A OUTPUT -d "$SERVER" -j ACCEPT
+   done
+fi
+
+## clearnet user is allowed to connect any outside target.
+iptables -A OUTPUT -m owner --uid-owner "$CLEARNET_USER" -j ACCEPT
+
+## Log.
+#iptables -A OUTPUT -j LOG --log-prefix "Whonix blocked output4: "
+
+## No output filtering yet!
+
+if [ "$VPN_FIREWALL" = "1" ]; then
+   ## Reject all other outgoing traffic.
+   iptables -A OUTPUT -j REJECT --reject-with icmp-admin-prohibited
 fi
 
 ###########################
