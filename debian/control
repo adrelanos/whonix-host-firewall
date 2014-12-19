@@ -1,0 +1,25 @@
+## This file is part of Whonix.
+## Copyright (C) 2012 - 2014 Patrick Schleizer <adrelanos@riseup.net>
+## See the file COPYING for copying conditions.
+
+Source: whonix-host-firewall
+Section: misc
+Priority: optional
+Maintainer: Patrick Schleizer <adrelanos@riseup.net>
+Build-Depends: debhelper (>= 8), faketime, ruby-ronn (>= 0.7.3)
+Homepage: https://github.com/Whonix/whonix-host-firewall
+Vcs-Browser: https://github.com/Whonix/whonix-host-firewall
+Vcs-Git: https://github.com/Whonix/whonix-host-firewall.git
+Standards-Version: 3.9.4
+
+Package: whonix-host-firewall
+Architecture: all
+## ifupdown, netbase are dependencies of whonix-gw-network-conf, that cannot
+## be added to whonix-gw-network-conf due to conflicts with chroot.
+Depends: ${misc:Depends}
+## iptables, sudo, whonix-gw-network-conf, ifupdown, netbase
+Conflicts: ufw
+Description: Whonix-Host's Firewall
+ iptables rules script and firewall configuration file for Whonix-Host.
+ .
+ Do not remove, unless you no longer wish to use Whonix.
