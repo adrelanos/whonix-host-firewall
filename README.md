@@ -1,16 +1,6 @@
-# Whonix-Gateway's Firewall #
+# Whonix-Host's Firewall #
 
-iptables rules script and firewall configuration file for Whonix-Gateway.
-
-Features:
-- transparent proxying
-- stream isolation
-- reject invalid packages
-- fail closed mechanism
-- optional VPN-Firewall
-- optional isolating proxy
-- optional incoming flash proxy
-- optional Tor relay
+iptables rules script and firewall configuration file for Whonix-Host.
 
 Do not remove, unless you no longer wish to use Whonix.
 
