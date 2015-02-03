@@ -21,4 +21,6 @@ Conflicts: ufw
 Description: Whonix-Host's Firewall
  iptables rules script and firewall configuration file for Whonix-Host.
  .
+ Supposed to be installed on Whonix Hosts.
+ .
  Do not remove, unless you no longer wish to use Whonix.
