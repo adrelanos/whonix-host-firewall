@@ -1,0 +1,65 @@
+commit 5b22a1b1c0432e41b364d0f345bd2426514076ca
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Feb 4 00:41:00 2015 +0000
+
+    updated makefile generic to version 1.3
+
+commit 2a4f85118d2919481f1e76d3c558b61fe54eebde
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 23:59:01 2015 +0000
+
+    Added creation of upstream changelog to debian/rules
+
+commit 30aa3a194f14375aaad0d878c68d1ea61f5e272e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Feb 3 00:38:21 2015 +0000
+
+    extended description to fix lintian warning
+
+commit 74cf09dcda7259740c7e16b73d74719bd77a6382
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:44:52 2015 +0000
+
+    updated readme
+
+commit 0159b1c8d9bd259abee003b675af71d50b9a756e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jan 7 19:35:02 2015 +0000
+
+    bumped compat from 8 to 9
+
+commit 3ac1f5301bab8dcce7a2ff25c03d645ce6079d7e
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 17:29:28 2014 +0000
+
+    work on firewall
+
+commit f840e30f1986ddf67cd3f342f3f2b9fd87b520ed
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 12:31:05 2014 +0000
+
+    work on firewall
+
+commit 3ca8806e14529a301ff41536921b7c11d2c8c3af
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 12:25:03 2014 +0000
+
+    depends
+
+commit b086ed921af099e1b187ea3efbbff370d265d803
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 12:21:06 2014 +0000
+
+    comments
+
+commit 67dd59d0b3ff80562132a780c88e1e107b604ccc
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 12:18:34 2014 +0000
+
+    comment
+
+commit 629eba229d20c204a5993c8733a465b208d0a831
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Dec 19 12:16:22 2014 +0000
+
+    initial implementation
