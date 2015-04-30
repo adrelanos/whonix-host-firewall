@@ -1,3 +1,27 @@
+commit d6523cced5a22c943c66b9d6edd8df254b92547a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 28 15:37:13 2015 +0000
+
+    added 'Keywords=' to '.desktop' files to fix lintian warning 'desktop-entry-lacks-keywords-entry' - https://phabricator.whonix.org/T281
+
+commit dc4eae58fcdce4af1eea161b1acf48f1a819344b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 28 13:43:31 2015 +0000
+
+    added debian/source/lintian-overrides with debian-watch-may-check-gpg-signature to fix lintian warning - https://phabricator.whonix.org/T277
+
+commit 12e57d3497402fa376e67b4cbcc5bf9033771bf2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Apr 26 23:18:40 2015 +0000
+
+    packaging, bumped Standards-Version from 3.9.4 to 3.9.6 for jessie support
+
+commit f192e4baa8c77cc7cf06dcd37663e8eda6db2b58
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Tue Apr 7 17:43:10 2015 +0000
+
+    bumped changelog version
+
 commit 807f405c16fa343fabb38a05bd6b47ba11fab9ba
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Thu Apr 2 18:41:41 2015 +0000
