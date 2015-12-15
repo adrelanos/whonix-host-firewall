@@ -2,6 +2,8 @@
 
 iptables rules script and firewall configuration file for Whonix-Host.
 
+Supposed to be installed on Whonix Hosts.
+
 Do not remove, unless you no longer wish to use Whonix.
 
 (This package description has been [automatically](https://github.com/Whonix/whonix-developer-meta-files/blob/master/debug-steps/packaging-helper-script) extracted and mirrored from `debian/control`.)
