@@ -1,3 +1,21 @@
+commit 714efb5835e09663c79bfe9ee2df11757e45b986
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 21 17:44:08 2016 +0000
+
+    readme
+
+commit 19f8430a22a653333c9f398053610623a6cf77e2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Jun 15 21:53:57 2016 +0000
+
+    also source /rw/config/whonix_firewall.d/*.conf config snippets
+
+commit a35309897e7b5f5ba596e40f05489462077dc49a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Apr 7 22:54:55 2016 +0000
+
+    bumped changelog version
+
 commit 1f481295b3d25cf81eaebf7b7b3b9def40513d42
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Dec 15 21:06:18 2015 +0000
