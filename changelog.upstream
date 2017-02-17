@@ -1,3 +1,29 @@
+commit a3d26b92665f372036524bded9a5fdbc66abe67b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:47:56 2017 +0000
+
+    remove faketime from Build-Depends:
+    
+    since no longer used for reproducible builds
+
+commit 941bee05bdb1dba42af19419fda68ecf939eedac
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:35:33 2017 +0000
+
+    remove debian/gain-root-command workaround
+
+commit 6d8765fa38e231846fcbfd6c100385d7f0b0fbe2
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Fri Feb 10 15:27:00 2017 +0000
+
+    packaging simplification ruby-ronn (>= 0.7.3) -> ruby-ronn
+
+commit 8c37c134f9022958fee7d23c85b1fa24d62c4113
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Jan 15 15:38:44 2017 +0000
+
+    bumped changelog version
+
 commit 0b0f2c49449cb0a5eeed06b43f21424aa73701f7
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sun Jan 15 08:35:52 2017 +0100
