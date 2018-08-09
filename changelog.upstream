@@ -1,3 +1,15 @@
+commit 364f35d8cc44898134b1cbb7c01a4ae8ffac148f
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sun Aug 5 14:31:39 2018 +0800
+
+    fix, don't hardcode kwrite, use xdg-open
+
+commit c2cd90a1e90aedd042cc7c67bf6c708bbfb77d59
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Thu Feb 1 15:33:56 2018 +0000
+
+    bumped changelog version
+
 commit d6ed0eddf4e17d97decf5fb655e6abbf6ffdcca2
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Mon Jan 29 15:50:56 2018 +0000
