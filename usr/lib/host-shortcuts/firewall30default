@@ -5,4 +5,4 @@
 
 set -x
 
-kdesudo xdg-open /etc/whonix_firewall.d/30_default
+gksudo xdg-open /etc/whonix_firewall.d/30_default
