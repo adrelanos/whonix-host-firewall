@@ -1,3 +1,15 @@
+commit 8f78ccbc063d9f11aa4fcc76e7c708efaf3ddb5b
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Wed Aug 28 11:35:52 2019 +0000
+
+    use properly override_dh_installman
+
+commit 0bd9987213ff52f5afe57029c71aa15ff0ab13f9
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Sat Aug 10 06:38:30 2019 +0000
+
+    bumped changelog version
+
 commit 868b6bf5b958e0ccd8ca7d568c95fa2b5f3c7aa6
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Sat Aug 10 02:28:55 2019 -0400
