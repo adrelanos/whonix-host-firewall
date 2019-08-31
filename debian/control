@@ -15,7 +15,7 @@ Package: whonix-host-firewall
 Architecture: all
 ## ifupdown, netbase are dependencies of whonix-gw-network-conf, that cannot
 ## be added to whonix-gw-network-conf due to conflicts with chroot.
-Depends: ${misc:Depends}, iptables, sudo, ifupdown, netbase
+Depends: ${misc:Depends}, iptables, sudo, ifupdown, netbase, adduser
 Conflicts: ufw
 Description: Whonix-Host's Firewall
  iptables rules script and firewall configuration file for Whonix-Host.
