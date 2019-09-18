@@ -7,4 +7,4 @@ set -x
 
 ## https://bugzilla.xfce.org/show_bug.cgi?id=15282
 ## https://github.com/lxqt/lxqt-sudo/issues/114
-lxsudo mousepad /etc/whonix_firewall.d/30_default
+sudoedit /etc/whonix_firewall.d/30_default
