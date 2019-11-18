@@ -1,3 +1,15 @@
+commit 6f0125190ba0dba9694042f92c6722628ec63d5a
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Nov 18 19:42:49 2019 +0000
+
+    fix sudoedit
+
+commit ba2f985d18f0f865c52c3508fd1a8f897478beed
+Author: Patrick Schleizer <adrelanos@riseup.net>
+Date:   Mon Oct 14 10:27:05 2019 +0000
+
+    bumped changelog version
+
 commit ea028eb4550cc676ed5b00518f5e7af0820022fb
 Author: Patrick Schleizer <adrelanos@riseup.net>
 Date:   Tue Oct 8 11:54:02 2019 +0000
